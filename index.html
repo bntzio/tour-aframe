@@ -9,7 +9,15 @@
 </head>
 <body>
   <a-scene>
-    <a-sky color="skyblue"></a-sky>
+    <a-assets>
+      <img id="a1" src="assets/1.jpg" />
+      <img id="a2" src="assets/2.jpg" />
+      <img id="a3" src="assets/3.jpg" />
+    </a-assets>
+    <a-image src="#a1" position="-1.5 1.8 -3"></a-image>
+    <a-image src="#a2" position="0 1.8 -3"></a-image>
+    <a-image src="#a3" position="1.5 1.8 -3"></a-image>
+    <a-sky src="#a1"></a-sky>
   </a-scene>
 </body>
 </html>
